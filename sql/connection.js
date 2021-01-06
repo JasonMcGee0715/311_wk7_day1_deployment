@@ -7,10 +7,11 @@ class Connection {
 
       const config = {
         connectionLimit: 100,
-        host: 'localhost',
+        host: '127.0.0.1',
         user: 'root',
-        password: 'password',
-        database: 'admin'
+        password: 'Philips1!',
+        database: 'admin',
+        insecureAuth: true
       }
 
       if (process.env.NODE_ENV === 'production' && process.env.CLOUD_INSTANCE) {
